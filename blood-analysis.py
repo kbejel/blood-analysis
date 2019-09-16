@@ -28,14 +28,14 @@ sns.heatmap(train_corr)
 test_map = plt.figure(2)
 sns.heatmap(test_corr)
 
-#put needed rows in
+#put needed rows in to X_train and y_train
 X_train = train.iloc[:, [1,2,3,4]].values
 y_train = train.iloc[:, -1].values
 
 print(X_train)
 print(y_train)
 
-#assign
+#assign X_test
 X_test = test.iloc[:,[1,2,3,4]].values
 
 print(X_test)
